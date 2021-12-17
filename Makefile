@@ -50,27 +50,3 @@ fclean :
 	rm -f $(NAME)
 
 re : fclean all
-
-
-
-
-static void	ft_arg(va_list ap, char format, int *count)
-{
-	if (format == 'd' || format == 'i' || format == 'u')
-	{
-	
-	}
-	else if (format == 'p')
-	{
-
-	}
-	else if (format == '%')
-	{
-		write(1, "%", 1);
-		*count += 1;
-	}
-	else if (format == 'x' || format == 'X')
-	{
-
-	}
-}
